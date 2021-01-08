@@ -19,7 +19,7 @@ jobs:
           node-version: 12
 
       - name: send
-        uses: zio3/discord-post@v0.0.1
+        uses: zio3/discord-post@v0.0.2
         with:
           severity: info
           details: Test succeeded.
