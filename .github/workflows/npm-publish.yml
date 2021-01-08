@@ -17,9 +17,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm ci
-      - run: npm test
-
 
       - name: send
         uses: zio3/discord-post@v0.0.1
