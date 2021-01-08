@@ -19,7 +19,7 @@ jobs:
           node-version: 12
 
       - name: send
-        uses: zio3/discord-post@v0.0.2
+        uses: zio3/discord-post@v0.0.3
         with:
           message: info
           embedUrl: https://github.com/zio3/discord-post
