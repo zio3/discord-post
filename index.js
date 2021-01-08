@@ -16,24 +16,21 @@ async function run() {
         const embedUrl = core.getInput('embedUrl');
         const embedTitle = core.getInput('embedTitle');
         
-        //const context = github.context;
-        //const obstr = JSON.stringify(context, undefined, 2)
-
-
-        //const hook = new webhook.Webhook(webhookUrl);
-        
         const embeds = [];
         if (embedTitle) {
             const embed = {};
             embed.title = embedTitle;
             embed.url = embedUrl;
-            embeds = [embed];
+            embeds.push(embed);
         }
         await request.post(webhookUrl)
             .send({
                 content: text,
                 embeds: embeds
             });
+
+
+
     } catch (error) {
         core.setFailed(error.message);
     }
