@@ -21,6 +21,7 @@ jobs:
       - name: send
         uses: zio3/discord-post@v0.0.2
         with:
-          severity: info
-          details: Test succeeded.
-          webhookUrl: ""
+          message: info
+          embedUrl: https://github.com/zio3/discord-post
+          embedTitle: Test succeeded.
+          webhookUrl: 'https://discord.com/api/webhooks/777735843531456542/dZJWSP-iI2jWfpnYelt6NWx2wmtCynL0D1S6PZD3bwUgSJzYLOBxeKQf3uSp88QH062s'
