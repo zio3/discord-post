@@ -25,18 +25,10 @@ async function run() {
         const embeds = [];
         if (embedTitle) {
             const embed = {};
-            if (text) {
-                msg = msg.setText(text);
-            }
-            if (embedUrl) {
-                msg = msg.setText
-            }
-
             embed.title = embedTitle;
             embed.url = embedUrl;
             embeds = [embed];
         }
-
         await request.post(webhookUrl)
             .send({
                 content: text,
