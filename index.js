@@ -15,12 +15,17 @@ async function run() {
         const text = core.getInput('message');
         const embedUrl = core.getInput('embedUrl');
         const embedTitle = core.getInput('embedTitle');
+        const embedColor = core.getInput('embedColor');
         
         const embeds = [];
         if (embedTitle) {
             const embed = {};
             embed.title = embedTitle;
-            embed.url = embedUrl;
+            embed.url = embedUrl;            
+            if (embedColor) {
+                embed.color = embedColor;
+            }
+
             embeds.push(embed);
         }
         await request.post(webhookUrl)
