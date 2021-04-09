@@ -19,9 +19,10 @@ jobs:
           node-version: 12
 
       - name: send
-        uses: zio3/discord-post@v0.0.5
+        uses: zio3/discord-post@v1.0.1
         with:
           message: info
           embedUrl: https://github.com/zio3/discord-post
           embedTitle: Test succeeded.
           webhookUrl: 'https://discord.com/api/webhooks/777735843531456542/dZJWSP-iI2jWfpnYelt6NWx2wmtCynL0D1S6PZD3bwUgSJzYLOBxeKQf3uSp88QH062s'
+          embedColor: 15406156
